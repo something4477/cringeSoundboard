@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2.5"
+        android:scaleY="4"
+        android:text="The worst soundboard"
+        app:layout_constraintBottom_toTopOf="@+id/topBottom"
+        app:layout_constraintEnd_toStartOf="@+id/rightPad"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toTopOf="@+id/topTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:onClick="plVineBoom"
+        android:text="Vine Boom"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toTopOf="@+id/topBottom" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="plTyrone"
+        android:text="Rizz"
+        app:layout_constraintEnd_toStartOf="@+id/rightPad"
+        app:layout_constraintTop_toTopOf="@+id/topBottom" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:onClick="plPipe"
+        android:text="Pipe"
+        app:layout_constraintEnd_toStartOf="@+id/rightPad"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:onClick="plHorse"
+        android:text="Horse"
+        app:layout_constraintEnd_toStartOf="@+id/rightPad"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="plLoudFart"
+        android:text="Loud Fart"
+        app:layout_constraintEnd_toStartOf="@+id/rightPad"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="plDoit"
+        android:text="DOET"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="plReverbFart"
+        android:text="Reverb Fart"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="plFogHorn"
+        android:text="Fog Horn"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="plFunky"
+        android:text="Funky"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="plHorn"
+        android:text="Horn Sound"
+        app:layout_constraintStart_toStartOf="@+id/leftPad"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="266dp"
+        android:layout_height="271dp"
+        android:layout_marginBottom="136dp"
+        android:rotationX="41"
+        android:rotationY="-21"
+        android:scaleX="2"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/_0230507_073504" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what"
+        android:onClick="goSecondPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightPad"
+        app:layout_constraintStart_toStartOf="@+id/leftPad" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
